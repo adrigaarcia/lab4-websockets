@@ -73,6 +73,7 @@ class ElizaOnOpenMessageHandlerToComplete(private val list: MutableList<String>,
         // if (COMPLETE ME) {
         //    COMPLETE ME
         // }
+        
         if(latch.count == 1L){
             session.basicRemote.sendText("no")
         }
